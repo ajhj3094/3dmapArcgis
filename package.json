@@ -13,6 +13,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@arcgis/core": "^4.31.6",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"

@@ -6,6 +6,9 @@
   <div>
     This is Index
   </div>
+  <ClientOnly>
+    <ThreeDimMap />
+  </ClientOnly>
 </template>
 
 <style scoped>
