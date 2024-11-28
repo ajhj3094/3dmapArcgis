@@ -2,6 +2,7 @@
 import Map from '@arcgis/core/Map.js'
 import MapView from '@arcgis/core/views/MapView'
 import SceneView from '@arcgis/core/views/SceneView.js'
+// import Button from 'primevue/button'
 
 onMounted(() => {
   const sceneView = new SceneView({
@@ -39,6 +40,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full h-full">
+    <Button label="Submit" />
     <div id="viewDiv" />
     <div id="mapViewDiv" />
   </div>

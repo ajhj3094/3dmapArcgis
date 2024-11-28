@@ -1,10 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from '@primevue/themes/Aura'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@vueuse/nuxt',
+    '@primevue/nuxt-module',
   ],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -12,11 +15,13 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   css: ['~/assets/scss/main.scss'],
-  // eslint: {
-  //   config: {
-  //     standalone: false // <---
-  //   }
-  // }
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
+  },
   vite: {
     css: {
       preprocessorOptions: {
