@@ -3,14 +3,16 @@ import { } from 'vue'
 </script>
 
 <template>
-  <div>
+  <div class="w-full">
     <p>Some default layout content shared across all pages</p>
-    <slot />
+    <main class="container mx-auto p-4 h-full">
+      <slot />
+    </main>
   </div>
 </template>
 
 <style scoped lang="scss">
-.container {
-  text-align: center;
-}
+// .container {
+  // text-align: center;
+// }
 </style>

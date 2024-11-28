@@ -3,14 +3,13 @@
 </script>
 
 <template>
-  <div>
+  <div class="w-full h-full">
     This is Index
+    <!-- <ThreeDimMap /> -->
+    <ClientOnly>
+      <ThreeDimMap />
+    </ClientOnly>
   </div>
-  <ClientOnly>
-    <ThreeDimMap />
-  </ClientOnly>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
