@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+  css: ['~/assets/scss/main.scss'],
   // eslint: {
   //   config: {
   //     standalone: false // <---
